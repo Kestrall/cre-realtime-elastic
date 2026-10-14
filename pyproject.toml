@@ -1,0 +1,15 @@
+[project]
+name = "cre-realtime-elastic"
+version = "0.1.0"
+description = "Restitution temps réel de CRE bancaires sur Elasticsearch, étude des Doc Values Lucene"
+requires-python = ">=3.11"
+dependencies = ["elasticsearch>=9,<10"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

@@ -1,0 +1,12 @@
+{
+  "description": "Pseudonymise un CRE pour un usage hors production (remplacement d'Optim)",
+  "processors": [
+    { "fingerprint": { "fields": ["iban"], "target_field": "iban_pseudo", "method": "SHA-256", "salt": "CHANGE-ME-SALT" } },
+    { "fingerprint": { "fields": ["account_id"], "target_field": "account_pseudo", "method": "SHA-256", "salt": "CHANGE-ME-SALT" } },
+    { "fingerprint": { "fields": ["holder_name"], "target_field": "holder_pseudo", "method": "SHA-256", "salt": "CHANGE-ME-SALT" } },
+    { "script": { "lang": "painless", "source": "ctx.iban = 'FR76' + ctx.iban_pseudo.replace('+', '').replace('/', '').replace('=', '').substring(0, 23).toUpperCase(); ctx.account_id = 'ACC-' + ctx.account_pseudo.replace('+', '').replace('/', '').replace('=', '').substring(0, 12).toUpperCase(); ctx.holder_name = 'CLIENT ' + ctx.holder_pseudo.replace('+', '').replace('/', '').replace('=', '').substring(0, 8).toUpperCase();" } },
+    { "remove": { "field": ["iban_pseudo", "account_pseudo", "holder_pseudo"] } },
+    { "gsub": { "field": "label", "pattern": "\\d", "replacement": "X" } },
+    { "set": { "field": "anonymized", "value": true } }
+  ]
+}

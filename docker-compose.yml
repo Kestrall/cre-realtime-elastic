@@ -1,0 +1,40 @@
+name: cre-realtime-elastic
+
+services:
+  elasticsearch:
+    image: elasticsearch:9.4.8
+    container_name: cre-es
+    environment:
+      - discovery.type=single-node
+      - cluster.name=cre-lab
+      - node.name=cre-es-01
+      # Lab local uniquement : sécurité désactivée pour simplifier.
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms2g -Xmx2g
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+      nofile: { soft: 65536, hard: 65536 }
+    ports:
+      - "127.0.0.1:9200:9200"
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs http://localhost:9200/_cluster/health?wait_for_status=yellow || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+
+  kibana:
+    image: kibana:9.4.8
+    container_name: cre-kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - XPACK_SECURITY_SHOWINSECURECLUSTERWARNING=false
+    ports:
+      - "127.0.0.1:5601:5601"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+
+volumes:
+  es-data:

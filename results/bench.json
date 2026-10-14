@@ -1,0 +1,529 @@
+{
+  "docs": 1000000,
+  "date": "2026-10-14T19:56:55+00:00",
+  "indices": {
+    "cre-default": {
+      "ingest_docs_per_s": 23364,
+      "store_bytes": 388637788,
+      "lucene_files": {
+        "fdt": 196003121,
+        "dvd": 69046240,
+        "tim": 60717241,
+        "doc": 31487835,
+        "kdd": 17785398,
+        "pos": 8102297,
+        "nvd": 3135433,
+        "bfi": 1250074,
+        "tip": 999671,
+        "kdi": 76120,
+        "fdx": 21886,
+        "fnm": 4759,
+        "dvm": 3417,
+        "tmd": 1483,
+        "si": 710,
+        "nvm": 535,
+        "kdm": 511,
+        "fdm": 453,
+        "segments": 389,
+        "psm": 112,
+        "bfm": 103,
+        "lock": 0
+      },
+      "dvm_headers": [
+        {
+          "file": "_2c_Lucene90_0.dvm",
+          "size": 3417,
+          "codec": "Lucene90DocValuesMetadata",
+          "version": 0,
+          "segment_id": "9dc6b0a00d93a28d069c36e8e9479295"
+        }
+      ],
+      "disk_usage": {
+        "total": 388637788,
+        "fields": {
+          "@timestamp": {
+            "doc_values": 2500001,
+            "inverted_index": 0,
+            "points": 2288942,
+            "stored": 0,
+            "norms": 0
+          },
+          "_id": {
+            "doc_values": 0,
+            "inverted_index": 6915740,
+            "points": 0,
+            "stored": 8639247,
+            "norms": 0
+          },
+          "_primary_term": {
+            "doc_values": 0,
+            "inverted_index": 0,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "_seq_no": {
+            "doc_values": 2500001,
+            "inverted_index": 0,
+            "points": 1146257,
+            "stored": 0,
+            "norms": 0
+          },
+          "_source": {
+            "doc_values": 0,
+            "inverted_index": 0,
+            "points": 0,
+            "stored": 187385625,
+            "norms": 0
+          },
+          "_version": {
+            "doc_values": 0,
+            "inverted_index": 0,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "account_id": {
+            "doc_values": 0,
+            "inverted_index": 3273226,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "account_id.keyword": {
+            "doc_values": 2005515,
+            "inverted_index": 2230887,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "amount": {
+            "doc_values": 3500000,
+            "inverted_index": 0,
+            "points": 3418381,
+            "stored": 0,
+            "norms": 0
+          },
+          "balance_after": {
+            "doc_values": 4000000,
+            "inverted_index": 0,
+            "points": 4347741,
+            "stored": 0,
+            "norms": 0
+          },
+          "channel": {
+            "doc_values": 0,
+            "inverted_index": 421821,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "channel.keyword": {
+            "doc_values": 500031,
+            "inverted_index": 392067,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "city": {
+            "doc_values": 0,
+            "inverted_index": 828304,
+            "points": 0,
+            "stored": 0,
+            "norms": 1000000
+          },
+          "city.keyword": {
+            "doc_values": 500070,
+            "inverted_index": 696453,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "currency": {
+            "doc_values": 0,
+            "inverted_index": 48388,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "currency.keyword": {
+            "doc_values": 4,
+            "inverted_index": 24028,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "direction": {
+            "doc_values": 0,
+            "inverted_index": 256433,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "direction.keyword": {
+            "doc_values": 125015,
+            "inverted_index": 233643,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "entity": {
+            "doc_values": 0,
+            "inverted_index": 464723,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "entity.keyword": {
+            "doc_values": 250032,
+            "inverted_index": 439217,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "event_id": {
+            "doc_values": 0,
+            "inverted_index": 33991542,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "event_id.keyword": {
+            "doc_values": 36128855,
+            "inverted_index": 28540043,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "generated_at": {
+            "doc_values": 2500001,
+            "inverted_index": 0,
+            "points": 2288942,
+            "stored": 0,
+            "norms": 0
+          },
+          "holder_name": {
+            "doc_values": 0,
+            "inverted_index": 1801596,
+            "points": 0,
+            "stored": 0,
+            "norms": 1000000
+          },
+          "holder_name.keyword": {
+            "doc_values": 1000435,
+            "inverted_index": 1230686,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "iban": {
+            "doc_values": 0,
+            "inverted_index": 3343192,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "iban.keyword": {
+            "doc_values": 2107736,
+            "inverted_index": 2300557,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "ingest_lag_ms": {
+            "doc_values": 4000000,
+            "inverted_index": 0,
+            "points": 4212967,
+            "stored": 0,
+            "norms": 0
+          },
+          "ingested_at": {
+            "doc_values": 1861191,
+            "inverted_index": 0,
+            "points": 158155,
+            "stored": 0,
+            "norms": 0
+          },
+          "label": {
+            "doc_values": 0,
+            "inverted_index": 6810337,
+            "points": 0,
+            "stored": 0,
+            "norms": 1000000
+          },
+          "label.keyword": {
+            "doc_values": 4347540,
+            "inverted_index": 4733638,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "merchant_category": {
+            "doc_values": 0,
+            "inverted_index": 473004,
+            "points": 0,
+            "stored": 0,
+            "norms": 135366
+          },
+          "merchant_category.keyword": {
+            "doc_values": 445638,
+            "inverted_index": 454915,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "operation_type": {
+            "doc_values": 0,
+            "inverted_index": 515146,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "operation_type.keyword": {
+            "doc_values": 500072,
+            "inverted_index": 485204,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "status": {
+            "doc_values": 0,
+            "inverted_index": 248951,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "status.keyword": {
+            "doc_values": 250034,
+            "inverted_index": 216996,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          }
+        }
+      },
+      "query_ms": {
+        "Volume par type d'opération": 0,
+        "Montants par jour (30 j)": 14,
+        "Top 10 comptes les plus actifs": 13,
+        "Débit / crédit par entité": 25,
+        "50 derniers CRE (tri par date)": 21
+      }
+    },
+    "cre-tuned": {
+      "ingest_docs_per_s": 29915,
+      "store_bytes": 277261195,
+      "lucene_files": {
+        "fdt": 195928691,
+        "tim": 35618431,
+        "dvd": 20080454,
+        "doc": 13365098,
+        "kdd": 10344553,
+        "bfi": 1250074,
+        "tip": 568167,
+        "pos": 44025,
+        "kdi": 31490,
+        "fdx": 21782,
+        "fnm": 3003,
+        "dvm": 2403,
+        "tmd": 939,
+        "si": 753,
+        "fdm": 453,
+        "segments": 389,
+        "kdm": 275,
+        "psm": 112,
+        "bfm": 103,
+        "lock": 0
+      },
+      "dvm_headers": [
+        {
+          "file": "_29_Lucene90_0.dvm",
+          "size": 2403,
+          "codec": "Lucene90DocValuesMetadata",
+          "version": 0,
+          "segment_id": "9dc6b0a00d93a28d069c36e8e9479299"
+        }
+      ],
+      "disk_usage": {
+        "total": 277261195,
+        "fields": {
+          "@timestamp": {
+            "doc_values": 2001015,
+            "inverted_index": 0,
+            "points": 4194980,
+            "stored": 0,
+            "norms": 0
+          },
+          "__root_doc_for_nested": {
+            "doc_values": 0,
+            "inverted_index": 0,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "_field_names": {
+            "doc_values": 0,
+            "inverted_index": 96084,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "_id": {
+            "doc_values": 0,
+            "inverted_index": 6859645,
+            "points": 0,
+            "stored": 8655144,
+            "norms": 0
+          },
+          "_primary_term": {
+            "doc_values": 0,
+            "inverted_index": 0,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "_seq_no": {
+            "doc_values": 2001015,
+            "inverted_index": 0,
+            "points": 3052233,
+            "stored": 0,
+            "norms": 0
+          },
+          "_source": {
+            "doc_values": 0,
+            "inverted_index": 0,
+            "points": 0,
+            "stored": 187295194,
+            "norms": 0
+          },
+          "_version": {
+            "doc_values": 0,
+            "inverted_index": 0,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "account_id": {
+            "doc_values": 2005515,
+            "inverted_index": 2230839,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "amount": {
+            "doc_values": 3000001,
+            "inverted_index": 0,
+            "points": 3128697,
+            "stored": 0,
+            "norms": 0
+          },
+          "balance_after": {
+            "doc_values": 3500000,
+            "inverted_index": 0,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "channel": {
+            "doc_values": 500031,
+            "inverted_index": 392259,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "city": {
+            "doc_values": 500070,
+            "inverted_index": 696061,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "direction": {
+            "doc_values": 125015,
+            "inverted_index": 233659,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "entity": {
+            "doc_values": 250032,
+            "inverted_index": 439275,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "event_id": {
+            "doc_values": 0,
+            "inverted_index": 28537555,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "holder_name": {
+            "doc_values": 0,
+            "inverted_index": 1792809,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "iban": {
+            "doc_values": 0,
+            "inverted_index": 2300596,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "ingest_lag_ms": {
+            "doc_values": 3501076,
+            "inverted_index": 0,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "ingested_at": {
+            "doc_values": 1500787,
+            "inverted_index": 0,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "label": {
+            "doc_values": 0,
+            "inverted_index": 5329672,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "merchant_category": {
+            "doc_values": 445638,
+            "inverted_index": 454717,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "operation_type": {
+            "doc_values": 500072,
+            "inverted_index": 485631,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          },
+          "status": {
+            "doc_values": 250034,
+            "inverted_index": 217028,
+            "points": 0,
+            "stored": 0,
+            "norms": 0
+          }
+        }
+      },
+      "query_ms": {
+        "Volume par type d'opération": 0,
+        "Montants par jour (30 j)": 16,
+        "Top 10 comptes les plus actifs": 13,
+        "Débit / crédit par entité": 27,
+        "50 derniers CRE (tri par date)": 0
+      }
+    }
+  }
+}

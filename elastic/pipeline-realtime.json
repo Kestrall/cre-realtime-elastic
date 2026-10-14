@@ -1,0 +1,12 @@
+{
+  "description": "Horodate l'arrivée du CRE et calcule le délai génération -> ingestion",
+  "processors": [
+    { "set": { "field": "ingested_at", "value": "{{{_ingest.timestamp}}}" } },
+    {
+      "script": {
+        "lang": "painless",
+        "source": "ZonedDateTime g = ZonedDateTime.parse(ctx.generated_at); ZonedDateTime i = ZonedDateTime.parse(ctx.ingested_at); ctx.ingest_lag_ms = ChronoUnit.MILLIS.between(g, i);"
+      }
+    }
+  ]
+}

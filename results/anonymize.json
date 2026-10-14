@@ -1,0 +1,21 @@
+{
+  "source_docs": 1000000,
+  "hors_prod_docs": 101675,
+  "source_accounts": 4973,
+  "hors_prod_accounts": 506,
+  "ibans_reels_retrouves": 0,
+  "exemple_avant": {
+    "account_id": "ACC00000550",
+    "iban": "FR7640502233355452122363873",
+    "holder_name": "Anne Abgrall",
+    "label": "PAIEMENT CB RESTAURATION LANDERNEAU 7404",
+    "amount": 240.44
+  },
+  "exemple_apres": {
+    "account_id": "ACC-EYO4VQBNLI8E",
+    "iban": "FR768RI7QQKLNKDWFUWCFIJXM5H",
+    "holder_name": "CLIENT TLPNME4H",
+    "label": "PAIEMENT CB RESTAURATION LANDERNEAU XXXX",
+    "amount": 240.44
+  }
+}
